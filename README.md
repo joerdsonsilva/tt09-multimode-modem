@@ -2,40 +2,38 @@
 
 # Tiny Tapeout Verilog Project Template
 
-- [Read the documentation for project](docs/info.md)
+# Multimode Modem
 
-## What is Tiny Tapeout?
+<div align="justify">
+  The multimode modem uses a clock signal to generate digitized signals over time, in sinusoidal format. From this digitized sinusoid, the modulation process is applied using different methods for each scheme, implemented through specific internal blocks to perform modulations ASK (switching the amplitude of the sine wave), FSK (switching the frequency of the sine wave through a digital signal modulator) and PSK (phase coding). In the demodulation stage, these three modulation schemes are analyzed to recover the original information, manifesting as '0' or '1' values that reflect the data signal already restored after the process.
+  </div>
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital and analog designs manufactured on a real chip.
+## Inputs and Outputs
 
-To learn more and get started, visit https://tinytapeout.com.
+  The multimode modem has the following inputs and outputs:
+     
+| Type   | Function      | Size     |
+|--------|---------------|----------|
+| Input  | clock         | 1 bit    |
+| Input  | reset         | 1 bit    |
+| Input  | sel           | 2 bits   |
+| Output | mod_out       | 7 bits   |
+| Output | demod_out     | 1 bit    |
 
-## Set up your Verilog project
+## How to Test
 
-1. Add your Verilog files to the `src` folder.
-2. Edit the [info.yaml](info.yaml) and update information about your project, paying special attention to the `source_files` and `top_module` properties. If you are upgrading an existing Tiny Tapeout project, check out our [online info.yaml migration tool](https://tinytapeout.github.io/tt-yaml-upgrade-tool/).
-3. Edit [docs/info.md](docs/info.md) and add a description of your project.
-4. Adapt the testbench to your design. See [test/README.md](test/README.md) for more information.
+<div align="justify">
+Apply a clock of 40~50 MHz. Next, apply a “1” logic level “reset” signal to synchronize the modem system and then make the “reset” signal a “0” logic level. Then select the type of modulation to be used, according to the sequence below. After selecting the modulation type, the modulated signal is expressed at the “mod_out” output and the demodulated signal at the “demod_out” output.
+  </div>
 
-The GitHub action will automatically build the ASIC files using [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/).
+ - Sel = "01" <= ASK modulation and demodulation
+    
+    ![01](https://github.com/joerdsonsilva/tt09-multimode-modem/assets/75455785/1acb1f2a-ad28-414d-ab8e-93733e423582)
+    
+ - Sel = "10" <= FSK modulation and demodulation
 
-## Enable GitHub actions to build the results page
+   ![10](https://github.com/joerdsonsilva/tt09-multimode-modem/assets/75455785/3f904341-be24-4f8a-ab3d-aaa245806197)
 
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
+ - Sel = "11" <= PSK modulation and demodulation
 
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://www.tinytapeout.com/guides/local-hardening/)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
+   ![11](https://github.com/joerdsonsilva/tt09-multimode-modem/assets/75455785/8e891f61-76d3-4adf-8009-26fa9175b915)
