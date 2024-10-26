@@ -27,9 +27,17 @@ The multimode modem uses a clock signal to generate digitized signals over time,
 
 Apply a clock of 5~10 MHz. Next, apply a “1” logic level “reset” signal to synchronize the modem system and then make the “reset” signal a “0” logic level. Then select the type of modulation to be used, according to the sequence below. After selecting the modulation type, the modulated signal is expressed at the “mod_out” output and the demodulated signal at the “demod_out” output.
 
-- Sel = "01" <= ASK modulation and demodulation
-- Sel = "10" <= FSK modulation and demodulation
-- Sel = "11" <= PSK modulation and demodulation
+ - Sel = "01" <= ASK modulation and demodulation
+    
+    ![10](https://github.com/user-attachments/assets/7a91f7ac-0301-4489-8ce1-4a038119856c)
+
+ - Sel = "10" <= FSK modulation and demodulation
+
+   ![01](https://github.com/user-attachments/assets/d0cb0f8c-a79d-4f97-8af0-c58135fc877b)
+
+ - Sel = "11" <= PSK modulation and demodulation
+
+   ![11](https://github.com/user-attachments/assets/3d95600f-e7eb-41d2-adda-66077c1725a6)
 
 ## External hardware
 
