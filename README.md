@@ -28,12 +28,13 @@ Apply a clock of 40~50 MHz. Next, apply a “1” logic level “reset” signal
 
  - Sel = "01" <= ASK modulation and demodulation
     
-    ![01](https://github.com/joerdsonsilva/tt09-multimode-modem/imgur.com/a/q0UJTcI).
-    
+    ![10](https://github.com/user-attachments/assets/7a91f7ac-0301-4489-8ce1-4a038119856c)
+
  - Sel = "10" <= FSK modulation and demodulation
 
-   ![10](https://github.com/joerdsonsilva/tt09-multimode-modem/assets/75455785/3f904341-be24-4f8a-ab3d-aaa245806197)
+   ![01](https://github.com/user-attachments/assets/d0cb0f8c-a79d-4f97-8af0-c58135fc877b)
 
  - Sel = "11" <= PSK modulation and demodulation
 
-   ![11](https://github.com/joerdsonsilva/tt09-multimode-modem/assets/75455785/8e891f61-76d3-4adf-8009-26fa9175b915)
+   ![11](https://github.com/user-attachments/assets/3d95600f-e7eb-41d2-adda-66077c1725a6)
+
