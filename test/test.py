@@ -9,10 +9,10 @@ from cocotb.triggers import ClockCycles, RisingEdge, FallingEdge, Timer
 async def test_project(dut):
     dut._log.info("Start")
 
-    # Set the clock period to 100 ns (10 MHz)
+ # Set the clock period to 100 ns (10 MHz)
     clock = Clock(dut.clk, 100, units="ns")
     cocotb.start_soon(clock.start())
-
+ 
     await ClockCycles(dut.clk, 4) # show startup X state in VCD
     dut.clk.value = 0
     dut.rst_n.value = 0
@@ -20,8 +20,8 @@ async def test_project(dut):
     dut.ui_in.value = 0
     dut.uio_in.value = 0
     await ClockCycles(dut.clk, 4) # show propagation of quiescent inputs in VCD
-
-  # reset
+ 
+ # reset
     dut._log.info("reset")
     dut.rst_n.value = 0
     await ClockCycles(dut.clk, 1000)
