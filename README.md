@@ -3,20 +3,20 @@
 # Multimode Modem
 
 <div align="justify">
-  The multimode modem uses a clock signal to generate digitized signals over time, in sinusoidal format. From this digitized sinusoid, the modulation process is applied using different methods for each scheme, implemented through specific internal blocks to perform modulations ASK (switching the amplitude of the sine wave), FSK (switching the frequency of the sine wave through a digital signal modulator) and PSK (phase coding). In the demodulation stage, these three modulation schemes are analyzed to recover the original information, manifesting as '0' or '1' values that reflect the data signal already restored after the process.
+The multimode modem uses a clock signal to generate digitized signals over time, in sinusoidal format. From this digitized sinusoid, the modulation process is applied using different methods for each scheme, implemented through specific internal blocks to perform modulations ASK (switching the amplitude of the sine wave), FSK (switching the frequency of the sine wave through a digital signal modulator) and PSK (phase coding). In the demodulation stage, these three modulation schemes are analyzed to recover the original information, manifesting as '0' or '1' values that reflect the data signal already restored after the process.
   </div>
 
 # Inputs and Outputs
 
 The multimode modem has the following inputs and outputs:
      
-| Type   | Function     | Size   |
-|--------|--------------|--------|
-| Input  | clock        | 1 bit  |
-| Input  | reset        | 1 bit  |
-| Input  | selection    | 2 bits |
-| Output | modulation   | 7 bits |
-| Output | demodulation | 1 bit  |
+| Type   | Function  | Size   |
+|--------|-----------|--------|
+| Input  | clk       | 1 bit  |
+| Input  | rst_n     | 1 bit  |
+| Input  | sel       | 2 bits |
+| Output | mod_out   | 7 bits |
+| Output | demod_out | 1 bit  |
 
 # How to Test
 
