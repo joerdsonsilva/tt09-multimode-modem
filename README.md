@@ -8,15 +8,15 @@
 
 # Inputs and Outputs
 
-  The multimode modem has the following inputs and outputs:
+The multimode modem has the following inputs and outputs:
      
-| Type   | Function         | Size     |
-|--------|------------------|----------|
-| Input  | clock (internal) | 1 bit    |
-| Input  | reset (internal) | 1 bit    |
-| Input  | selection        | 2 bits   |
-| Output | modulation       | 7 bits   |
-| Output | demodulation     | 1 bit    |
+| Type   | Function     | Size   |
+|--------|--------------|--------|
+| Input  | clock        | 1 bit  |
+| Input  | reset        | 1 bit  |
+| Input  | selection    | 2 bits |
+| Output | modulation   | 7 bits |
+| Output | demodulation | 1 bit  |
 
 # How to Test
 
