@@ -15,13 +15,13 @@ The multimode modem uses a clock signal to generate digitized signals over time,
 
 The multimode modem has the following inputs and outputs:
      
-| Type   | Function      | Size     |
-|--------|---------------|----------|
-| Input  | clock         | 1 bit    |
-| Input  | reset         | 1 bit    |
-| Input  | sel           | 2 bits   |
-| Output | mod_out       | 7 bits   |
-| Output | demod_out     | 1 bit    |
+| Type   | Function         | Size     |
+|--------|------------------|----------|
+| Input  | clock (internal) | 1 bit    |
+| Input  | reset (internal) | 1 bit    |
+| Input  | sel              | 2 bits   |
+| Output | mod_out          | 7 bits   |
+| Output | demod_out        | 1 bit    |
 
 ## How to test
 
