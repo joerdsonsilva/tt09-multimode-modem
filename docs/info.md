@@ -13,7 +13,7 @@ The multimode modem uses a clock signal to generate digitized signals over time,
 
 ## Inputs and Outputs
 
-  The multimode modem has the following inputs and outputs:
+The multimode modem has the following inputs and outputs:
      
 | Type   | Function      | Size     |
 |--------|---------------|----------|
