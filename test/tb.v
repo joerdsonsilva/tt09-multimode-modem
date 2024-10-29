@@ -19,12 +19,14 @@ module tb ();
     reg  ena;
     reg  [7:0] ui_in;
     reg  [7:0] uio_in;
-    wire [1:0] sel = ui_in[1:0];
-    wire [6:0] mod_out = uo_out[6:0];
-    wire [7:7] demod_out = uo_out[7:7];
     wire [7:0] uo_out;
     wire [7:0] uio_out;
     wire [7:0] uio_oe;
+   
+    wire [1:0] sel = ui_in[1:0];
+    wire [6:0] mod_out = uo_out[6:0];
+    wire [7:7] demod_out = uo_out[7:7];
+   
   `ifdef GL_TEST
     wire VPWR = 1'b1;
     wire VGND = 1'b0;
