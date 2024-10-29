@@ -19,9 +19,9 @@ The multimode modem has the following inputs and outputs:
 |--------|------------------|----------|
 | Input  | clock (internal) | 1 bit    |
 | Input  | reset (internal) | 1 bit    |
-| Input  | sel              | 2 bits   |
-| Output | mod_out          | 7 bits   |
-| Output | demod_out        | 1 bit    |
+| Input  | selection        | 2 bits   |
+| Output | modulation       | 7 bits   |
+| Output | demodulation     | 1 bit    |
 
 ## How to test
 
