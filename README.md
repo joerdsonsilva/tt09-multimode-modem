@@ -10,7 +10,7 @@ The multimode modem uses a clock signal to generate digitized signals over time,
 
 | TopCellName | GitHub Repository Link | Country | Institution | Contact Email | Shipping Address |
 |-------------|------------------------|---------|-------------|---------------|------------------|
-| FMD_QNC_CryoChip | https://github.com/IHP-GmbH/TO_Apr2025/tree/main/Mixer5GHz | Brazil | UFERSA | francisco.brito@ufersa.edu.br | UFERSA - Federal University of Semiarid, RN233 - Km01, 59780-000, Caraubas, RN, Brazil |
+| FMD_QNC_CryoChip | https://github.com/IHP-GmbH/TO_Nov2024/tree/main/CryoChip | Brazil | UFERSA | francisco.brito@ufersa.edu.br | UFERSA - Federal University of Semiarid, RN233 - Km01, 59780-000, Caraubas, RN, Brazil |
 
 
 The multimode modem has the following inputs and outputs:
