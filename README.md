@@ -10,7 +10,7 @@ The multimode modem uses a clock signal to generate digitized signals over time,
 
 |  TopCellName      |  GitHub Repository Link         | Country  | Institution                   |  Contact Email             |   Shipping Address    |
 |--------------------------|-------------------------------------------|--------------|-------------------------------|---------------------------|-------------------------|
-|   FMD_QNC_16_Mixer5GHz     | [GitHub](https://github.com/IHP-GmbH/TO_Apr2025/tree/main/Mixer5GHz) | Brazil  | Federal University of XXX     | your.email@university.br  |
+|   FMD_QNC_16_Mixer5GHz     | https://github.com/IHP-GmbH/TO_Apr2025/tree/main/Mixer5GHz | Brazil  | Federal University of XXX     | your.email@university.br  |
 
 
 The multimode modem has the following inputs and outputs:
