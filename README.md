@@ -8,9 +8,10 @@ The multimode modem uses a clock signal to generate digitized signals over time,
 
 # Inputs and Outputs
 
-| Nome da célula superior | Link do repositório do GitHub | País   | Instituição                   | E-mail de contato         |
-|--------------------------|-------------------------------|--------|-------------------------------|---------------------------|
-| FMD_QNC_04_160GHz_LNA    | [GitHub](https://github.com/IHP-GmbH/TO_Apr2025/tree/main/160GHz_LNA) | Brasil | Universidade Federal de XXX | seu.email@universidade.br |
+| Top cell name           | GitHub repository link        | Country | Institution                   | Contact e-mail            |
+|--------------------------|-------------------------------|---------|-------------------------------|---------------------------|
+| FMD_QNC_04_160GHz_LNA    | [GitHub](https://github.com/IHP-GmbH/TO_Apr2025/tree/main/160GHz_LNA) | Brazil  | Federal University of XXX     | your.email@university.br  |
+
 
 The multimode modem has the following inputs and outputs:
      
